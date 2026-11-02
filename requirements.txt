@@ -1,0 +1,31 @@
+# Climate, Fire, and Loss: Predicting Wildfire Insurance Loss in California
+#
+# The notebooks were run on Python 3.12 (3.12.11). Only xgboost is pinned to an exact
+# version, because that is the version recorded in the saved model files in
+# "Processed Data/". The other packages use minimum versions that have not been
+# re-tested one by one. If you have the original environment, replace this file with
+# the output of `pip freeze` for exact reproducibility.
+#
+#   python -m venv .venv
+#   pip install -r requirements.txt
+
+# --- Data handling and geospatial (county / fire perimeter spatial joins) ---
+numpy>=1.26
+pandas>=2.2
+geopandas>=1.0
+
+# --- Modelling ---
+scikit-learn>=1.4
+statsmodels>=0.14
+xgboost==3.2.0
+
+# --- Explainability ---
+shap>=0.48
+
+# --- Plotting ---
+matplotlib>=3.8
+seaborn>=0.13
+
+# --- Running the notebooks ---
+jupyterlab>=4.0
+ipykernel>=6.29

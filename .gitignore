@@ -1,0 +1,44 @@
+# ---------------------------------------------------------------
+# Created at runtime by the preprocessing notebook (unzipped shapefiles)
+# ---------------------------------------------------------------
+Data/**/extracted/
+
+# Raw files that no notebook reads (kept out of the repository to save space)
+Data/CA Insurance data/*.xlsx
+Data/CA Insurance data/*.docx
+Data/CA Insurance data/sb824_data_all_companies.csv
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# ---------------------------------------------------------------
+# Jupyter
+# ---------------------------------------------------------------
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------
+# Secrets and local config (never commit these)
+# ---------------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+
+# ---------------------------------------------------------------
+# OS / editor
+# ---------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.log
